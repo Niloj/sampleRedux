@@ -14,6 +14,7 @@ class Posts extends Component {
       .then(res => res.json())
       .then(data => this.setState({ posts: data }));
   }
+  
 
   render() {
     const postItems = this.state.posts.map(post => (
